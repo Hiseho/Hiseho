@@ -12,7 +12,7 @@ Now, what is the restaurant in this analogy ? Well it's the actual machine (or c
 
 ## Why do you need a web server ?
 
-Now that we get the gist of what a web server is, let's go a bit more in depth. A web server is a *software* that serves *web pages* to *users* upon request. It requests made using protocols like **HTTP** or **HTTPS** and the server responds with the requested page or data that can be displayed in the browser.
+Now that we get the gist of what a web server is, let's go a bit more in depth. A web server is a *software* that serves *web pages* to *users* upon request. The requests are made using protocols like **HTTP** or **HTTPS** and the server responds with the requested page or data that can be displayed in the browser.
 
 A web server is a **crucial part** of a home-lab because you will access most of your services through a web interface. On a security level it is also the first thing (and in theory, *only* thing (aside from a VPN)) that you might want to expose to the internet.
 
