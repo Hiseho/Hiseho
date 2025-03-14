@@ -1,9 +1,7 @@
 ---
 title: Introduction
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
+description: "So you want to self-host huh ? Tag along and let's discover everything you need to know (and maybe more) about self-hosting !"
 summary: ""
-date: 2023-09-07T16:04:48+02:00
-lastmod: 2023-09-07T16:04:48+02:00
 draft: false
 weight: 810
 toc: true
