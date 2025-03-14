@@ -1,8 +1,9 @@
 +++
 title="Internet"
+weight=10
 +++
 
-This page will cover the basics of exposing your services to the internet. If you are here, you probably know what the internet is but let's go over some basic concepts.
+This page will cover the basics of internet and introduce exposing services to the internet. If you are here, you probably know what the internet is but let's go over some basic concepts.
 
 ## IP Addresses
 
@@ -20,16 +21,22 @@ You might also have noticed that there are only a limited number of IPv4 address
 
 ## Ports
 
+### What are ports ?
+
 Okay so now you know where the router lives with its public IP address. But how do you access a server ? What if you have multiple websites ?? What if you want **waffles** for dinner ???! Well, that's where ports come in. Ports are doors ! It's the appartement number in the building. It allows you to access different services on the same machine. Some ports are used by protocols like SSH (22), HTTP (80), HTTPS (443), etc. You can also use custom ports for your services. For example, you could run a web server on port 8080.
 
 Ports can be listened to by a service, only one at a time (how can your drive and video hosting service live in the same flat ?)
 
 So as a recap :
-- **Public IP address**: The address of your router on the internet. Street name !
-- **Private IP address**: The address of your device on your local network. Street number !
-- **Port**: The door number !
+- **Public IP address**: The address of your router on the internet. Street name
+- **Private IP address**: The address of your device on your local network. Street number
+- **Port**: The door number
 
 *Note* : by default, when you access a website, you don't specify the port number in the URL. This is because the browser uses the default port for the protocol (80 for HTTP, 443 for HTTPS).
+
+### Port Forwarding
+
+Your public IP address points to your router. Port forwarding is a feature of the router to forward incoming traffic on a certain port to a device on your local network. This can be done in the router's settings. This is how you can access services on your local network from the internet. Keep in mind that this can be a security risk if not done properly.
 
 ## Domain Names
 
@@ -39,6 +46,15 @@ But how do you know who is who ? Well, that's where DNS comes in. It's a phone b
 
 ## Foreshadowing
 
-Now, you might have noticed that you access some services without ever specifying a port number. How does this witchcraft work ? How can you have multiple services on the same machine, accessed through the same port despite that a port can only be listened to by one service at a time ? Well, that's where reverse proxies come in. You can read more about them in the [Reverse Proxies](/docs/coreconcepts/reverse-proxy) section.
+Now, you might have noticed that you access some services without ever specifying a port number. How does this witchcraft work ? How can you have multiple services on the same machine, accessed through the same port despite that a port can only be listened to by one service at a time ? Well, that's where reverse proxies come in. You can read more about them in the [Reverse Proxies](/docs/coreconcepts/reverse-proxies) section.
 
+## How to fit all those bricks together now ?
 
+Assuming that you have a server running on your local network, if you want to access a service from the internet, you will need to:
+1. Have a service running on your server. Ensure that it is accessible from your local network.
+2. Forward the port of the service on your router to the server.
+3. Navigate to your public IP address with the port number in your browser.
+4. Voilà ! You are now accessing a service on your local network from the internet.
+
+It was not that hard, right ? But remember, with great power comes great responsibility. Exposing services to the internet can be a security risk. Make sure to keep your services up to date and follow best practices when it comes to security.
+An open port is like an open door, you wouldn't leave your front door open, would you ? That's why reverse proxies are a good idea, they can act as a bouncer for your services.
