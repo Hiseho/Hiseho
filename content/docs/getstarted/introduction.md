@@ -31,7 +31,13 @@ Before you start, you should not necessarily have a lot of knowledge about self-
 - A domain name (optional but ***HEAVILY*** recommended)
 - Free time and a bit of patience !
 
-## Basic concepts
+## Layout of this guide
 
-Before we dive into the self-hosting world, let's get familiar with some basic concepts that you will encounter along the way.
+This guide will be divided into multiple sections, each one focusing on a specific aspect of self-hosting.
+Here is a rough outline of what you can expect :
+- **[Getting started](#what-is-self-hosting)** : You are here ! In this section, we will focus on setting up your home-lab.
+- **Core Concepts** : This section will introduce you to the core concepts of self-hosting without actually setting up anything.
+- **Advanced Concepts** : This section will focus on some more advanced concepts that you might want to know about.
+- **Tutorials** : This section will be a collection of tutorials on how to set up specific services on your home-lab.
+- **Troubleshooting** : This section will be a collection of common issues that you might encounter and how to solve them.
 

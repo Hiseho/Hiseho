@@ -44,6 +44,11 @@
   pageRef = "/docs/getstarted"
   weight = 10
 
+[[sidebar_docs]]
+  name = "Core Concepts"
+  pageRef = "/docs/coreconcepts"
+  weight = 20
+
 
 # [[social]]
 #   name = "X"
