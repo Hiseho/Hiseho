@@ -27,4 +27,6 @@ There are many web servers out there, you might have already heard of some of th
 
 Now all of these are not necessarily referred to as web servers per se but as reverse proxies. We will get into that in a later section but for now, let's just say they act as an hotel receptionist, they take your request and send them to the right room (service).
 
+## But is it safe ?
 
+Well it depends ! Most of the time, the server itself is safe but not necessarily the services running behind it. Some services might have vulnerabilities that could in turn compromise the whole home-lab. That's why it is important to keep everything up to date and to follow best practices when it comes to security.
