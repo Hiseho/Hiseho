@@ -58,3 +58,5 @@ Assuming that you have a server running on your local network, if you want to ac
 
 It was not that hard, right ? But remember, with great power comes great responsibility. Exposing services to the internet can be a security risk. Make sure to keep your services up to date and follow best practices when it comes to security.
 An open port is like an open door, you wouldn't leave your front door open, would you ? That's why reverse proxies are a good idea, they can act as a bouncer for your services.
+
+Reverse proxies makes it so that you only ever need to open 443 (and 80 if you want people to sniff your traffic) and they will handle the rest.
