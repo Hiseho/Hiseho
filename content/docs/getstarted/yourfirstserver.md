@@ -86,7 +86,6 @@ The private key must be on the computer that wants to connect to the server. The
 There is a step that you might have missed. Your client computer can hold a lot of keys at a time but will not know which to use unless specified. This can be done by editing a config file. You can create a file called `config` in the `~/.ssh/` directory on your client computer. You can do this using the command `nano ~/.ssh/config`. This file will contain the configuration for your SSH keys. You can add the following lines to the file :
 
 ```bash
-
 Host <Name you want to give to your server>
     HostName <server_ip> # The local IP of your server
     User <username> # root or the user you created
